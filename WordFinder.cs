@@ -19,7 +19,25 @@ namespace BabySmash
         private bool wordsReady;
 
         private HashSet<string> words = new HashSet<string>();
+		public static WordFinder WordFinderFromString(string resourceString)
+		{
+			WordFinder f = new WordFinder();
+			foreach(var s in resourceString.Split(new char[] { '\n' }))
+			{
+				// Ignore invalid lines, comment lines, or words which are too short or too long.
+				if (!s.Contains(";") && !s.Contains("/") && !s.Contains("\\") &&
+					s.Length >= MinimumWordLength && s.Length <= MaximumWordLength)
+				{
+					f.words.Add(s.ToUpper());
+				}
+			}
+			f.wordsReady = true;
+			return f;
+		}
+		private WordFinder()
+		{
 
+		}
         public WordFinder(string wordsFilePath)
         {
             // File path provided should be relative to our running location, so combine for full path safety.

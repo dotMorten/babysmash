@@ -23,15 +23,15 @@ namespace BabySmash
     {
         private static readonly List<KeyValuePair<string, BrushControlFunc>> hashTableOfFigureGenerators = new List<KeyValuePair<string, BrushControlFunc>>
        {
-           new KeyValuePair<string, BrushControlFunc>("Circle", x => new CoolCircle(x) ),
-           new KeyValuePair<string, BrushControlFunc>("Oval", x => new CoolOval(x) ),
-           new KeyValuePair<string, BrushControlFunc>("Rectangle", x => new CoolRectangle(x) ),
-           new KeyValuePair<string, BrushControlFunc>("Hexagon", x => new CoolHexagon(x) ),
-           new KeyValuePair<string, BrushControlFunc>("Trapezoid", x => new CoolTrapezoid(x) ),
-           new KeyValuePair<string, BrushControlFunc>("Star", x => new CoolStar(x) ),
-           new KeyValuePair<string, BrushControlFunc>("Square", x => new CoolSquare(x) ),
-           new KeyValuePair<string, BrushControlFunc>("Triangle", x => new CoolTriangle(x) ),
-           new KeyValuePair<string, BrushControlFunc>("Heart", x => new CoolHeart(x) )
+           new KeyValuePair<string, BrushControlFunc>(Resources.ShapeNameCircle, x => new CoolCircle(x) ),
+           new KeyValuePair<string, BrushControlFunc>(Resources.ShapeNameOval, x => new CoolOval(x) ),
+           new KeyValuePair<string, BrushControlFunc>(Resources.ShapeNameRectangle, x => new CoolRectangle(x) ),
+           new KeyValuePair<string, BrushControlFunc>(Resources.ShapeNameHexagon, x => new CoolHexagon(x) ),
+           new KeyValuePair<string, BrushControlFunc>(Resources.ShapeNameTrapezoid, x => new CoolTrapezoid(x) ),
+           new KeyValuePair<string, BrushControlFunc>(Resources.ShapeNameStar, x => new CoolStar(x) ),
+           new KeyValuePair<string, BrushControlFunc>(Resources.ShapeNameSquare, x => new CoolSquare(x) ),
+           new KeyValuePair<string, BrushControlFunc>(Resources.ShapeNameTriangle, x => new CoolTriangle(x) ),
+           new KeyValuePair<string, BrushControlFunc>(Resources.ShapeNameHeart, x => new CoolHeart(x) )
        };
 
         public static UserControl NewUserControlFrom(FigureTemplate template)

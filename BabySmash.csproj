@@ -67,6 +67,11 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.da-DK.Designer.cs">
+      <DependentUpon>Resources.da-DK.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="WordFinder.cs" />
     <Reference Include="PresentationFramework.Luna">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
@@ -270,6 +275,11 @@
     <Compile Include="Tweening\TransitionType.cs" />
     <Compile Include="Tweening\Tween.cs" />
     <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="Properties\Resources.da-DK.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.da-DK.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

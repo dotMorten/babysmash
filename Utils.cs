@@ -5,6 +5,7 @@ using System.Windows.Media;
 using System.Windows.Markup;
 using System.IO;
 using System.Xml;
+using BabySmash.Properties;
 
 namespace BabySmash
 {
@@ -32,15 +33,15 @@ namespace BabySmash
       {
          brushToString = new Dictionary<Color, string>
                                 {
-                                    {Colors.Red, "Red"},
-                                    {Colors.Blue, "Blue"},
-                                    {Colors.Yellow, "Yellow"},
-                                    {Colors.Green, "Green"},
-                                    {Colors.Purple, "Purple"},
-                                    {Colors.Pink, "Pink"},
-                                    {Colors.Orange, "Orange"},
-                                    {Colors.Tan, "Tan"},
-                                    {Colors.Gray, "Gray"}
+                                    {Colors.Red, Resources.ColorRed},
+                                    {Colors.Blue, Resources.ColorBlue},
+                                    {Colors.Yellow, Resources.ColorYellow},
+                                    {Colors.Green, Resources.ColorGreen},
+                                    {Colors.Purple, Resources.ColorPurple},
+                                    {Colors.Pink, Resources.ColorPink},
+                                    {Colors.Orange, Resources.ColorOrange},
+                                    {Colors.Tan, Resources.ColorTan},
+                                    {Colors.Gray, Resources.ColorGray}
                                 };
 
          someColors = new Color[brushToString.Count];
